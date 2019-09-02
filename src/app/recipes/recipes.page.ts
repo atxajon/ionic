@@ -16,7 +16,7 @@ export class RecipesPage implements OnInit {
   // Inject the recipes service.
   constructor(private recipesService: RecipesService) { }
 
-  // ngOnInit() is always a great place for initialization work.
+  // ngOnInit() is always a great place for initialization work. Thanks to dependency injection on the constructor we can now use this.recipesService in any of the class methods.
   ngOnInit() {
     // 
     this.recipes = this.recipesService.getAllRecipes();
